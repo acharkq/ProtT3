@@ -1,5 +1,9 @@
 # ProtT3: Protein-to-Text Generation for Text-based Protein Understanding
 
+Codes of our ACL2024 paper.
+
+Authors: Zhiyuan Liu, An Zhang, Hao Fei, Enzhi Zhang, Xiang Wang, Kenji Kawaguchi, Tat-Seng Chua
+
 
 ## Dependencies
 
@@ -85,3 +89,17 @@ python stage1.py --devices '0,1,2,3' --mode eval --filename stage1_ckpt --num_qu
         ```sh
         python stage2.py --devices '0,1,2,3' --mode train  --filename prot_qa --num_query_token 8  --save_every_n_epochs 10 --num_workers 8 --batch_size 128 --accumulate_grad_batches 1 --precision 'bf16-mixed'  --root "data/PDBDataset" --llm_tune mid_lora --prompt "Question: {} Answer:" --inference_batch 32 --max_inference_len 36  --init_checkpoint /path/to/pdbqa_ft.ckpt;
         ```
+
+
+## Citation
+
+```bib
+@inproceedings{liu2024prott,
+    title={ProtT3: Protein-to-Text Generation for Text-based Protein Understanding},
+    author={Liu, Zhiyuan and Zhang, An and Fei, Hao and Zhang, Enzhi and Wang, Xiang and Kawaguchi, Kenji and Chua, Tat-Seng},
+    booktitle={{ACL}},
+    publisher    = {Association for Computational Linguistics},
+    year={2024},
+    url={https://openreview.net/forum?id=ZmIjOPil2b}
+}
+```

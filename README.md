@@ -14,10 +14,10 @@ python==3.8
     * `pip install packaging ninja`
     * `conda install -c "nvidia/label/cuda-11.7.1" cuda-nvcc`
     * `conda install -c "nvidia/label/cuda-11.7.1" cuda-libraries-dev`
-* Install the lastest version of opendela by runing `pip install git+https://github.com/thunlp/OpenDelta.git`
+* Install the latest version of opendela by runing `pip install git+https://github.com/thunlp/OpenDelta.git`
 * Install Lavis: `pip install rouge_score nltk salesforce-lavis`
 * Install others: `pip install -U transformers pytorch-lightning`
-* Install the lastest version of deepspeed: `pip install git+https://github.com/microsoft/DeepSpeed.git`
+* Install the latest version of deepspeed: `pip install git+https://github.com/microsoft/DeepSpeed.git`
 * Download nltk corpus:
 ```
 import nltk
